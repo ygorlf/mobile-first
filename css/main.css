@@ -1,0 +1,311 @@
+/*
+	Varibles & Mixins:
+*/
+/*
+	Base Styles
+*/
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+body {
+  font: 100%/1.5 "Open Sans Condensed", sans-serif;
+}
+@media (min-width: 768px) {
+  body {
+    font: 120%/1.5 "Open Sans Condensed", sans-serif;
+  }
+}
+h1,
+h2,
+h3 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 200;
+}
+h1 {
+  font-size: 3em;
+  line-height: 1.25;
+  color: #fff;
+}
+h2 {
+  margin: 0 0 0.25em;
+  text-align: center;
+  font-size: 2.4em;
+  line-height: 1;
+}
+h3 {
+  margin: 0.25em 0;
+  font-size: 1.6em;
+  line-height: 1;
+}
+p,
+blockquote {
+  font-size: 1.2em;
+  line-height: 1.5;
+  color: #b1b1b1;
+}
+blockquote {
+  color: #222;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: #f7cc4b;
+}
+img,
+video {
+  max-width: 100%;
+}
+hr {
+  border: 1px solid #b1b1b1;
+}
+.container {
+  width: 100%;
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 5%;
+}
+.subheading {
+  margin: 0;
+  text-align: center;
+  font-size: 1.2em;
+  font-weight: 200;
+  color: #f7cc4b;
+}
+.btn {
+  display: block;
+  margin: 1.5em auto;
+  max-width: 160px;
+  color: #f7cc4b;
+  font-weight: bold;
+  border: 2px solid #f7cc4b;
+  padding: 0.25em 2em;
+}
+.btn:hover {
+  color: #fff;
+  background: #f7cc4b;
+}
+/*
+	Header
+*/
+#header {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: url("../media/hero-principles.jpg") center left;
+  background-size: cover;
+}
+#header .heading {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+  margin-top: 0;
+  text-align: center;
+}
+@media (min-width: 768px) {
+  #header .heading {
+    position: relative;
+    text-align: center;
+  }
+}
+#header .heading span {
+  color: #f7cc4b;
+}
+/*
+	Navigation
+*/
+#navigation {
+  position: relative;
+  height: 90px;
+  background: rgba(0,0,0,0.9);
+}
+#navigation .logo {
+  margin-top: 0;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+  left: 2.5%;
+}
+#navigation .menu {
+  width: 100%;
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  margin-top: 0;
+  background: rgba(0,0,0,0.9);
+}
+#navigation .menu li {
+  margin: 0.5em 0;
+}
+#navigation .menu a {
+  font-weight: bold;
+  color: #fff;
+}
+/*
+	About Section
+*/
+#about-us {
+  padding: 3em 0;
+}
+#about-us h2 {
+  text-align: left;
+}
+#about-us .subheading {
+  text-align: left;
+}
+/*
+	Video PResentation Section
+*/
+#video-presentation {
+  padding: 3em 0;
+  color: #fff;
+  background: #f7cc4b;
+}
+#video-presentation .subheading {
+  color: #222;
+}
+#video-presentation .intro {
+  display: block;
+  margin: 1.5em auto;
+}
+/*
+	Team Section
+*/
+#team {
+  padding: 3em 0;
+}
+#team .member {
+  margin: 1.5em auto;
+  text-align: center;
+}
+#team .member img {
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+}
+#team .member .status {
+  color: #f7cc4b;
+  font-weight: 700;
+}
+/*
+	Parallax Section
+*/
+#parallax {
+  padding: 6em 0;
+  background: url("../media/about-parallax-filtered.jpg") center fixed;
+  background-size: cover;
+}
+#parallax h2,
+#parallax p {
+  color: #fff;
+}
+#parallax p {
+  text-align: center;
+}
+#parallax .subheading {
+  color: #f7cc4b;
+}
+/*
+	Principles Section
+*/
+#our-principles {
+  padding: 3em 0;
+}
+#our-principles h2 {
+  margin: 0.75em 0 0.25em;
+}
+/*
+	Gallery Section
+*/
+#gallery {
+  padding: 3em 0;
+  background: #f7cc4b;
+}
+#gallery h2 {
+  color: #fff;
+}
+#gallery .subheading {
+  margin: 0 0 0.25em;
+  color: #222;
+}
+#gallery #owl-gallery .item {
+  margin: 0.5em;
+}
+#gallery #owl-gallery .item img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+/*
+	Achievments Section
+*/
+#achievments {
+  padding: 3em 0;
+  text-align: center;
+}
+#achievments h3 {
+  color: #f7cc4b;
+  font-size: 3em;
+  font-weight: 500;
+}
+#achievments .achievment .fa {
+  padding: 10px 0;
+  color: #222;
+}
+/*
+	Up to Date Section
+*/
+#up-to-date {
+  padding: 3em 0;
+  background: #f7cc4b;
+}
+#up-to-date h2 {
+  color: #fff;
+}
+#up-to-date .subheading {
+  color: #222;
+}
+#up-to-date form {
+  margin-top: 3em;
+}
+#up-to-date form input[type="text"],
+#up-to-date form input[type="email"],
+#up-to-date form input[type="submit"] {
+  display: block;
+  width: 90%;
+  margin: 0.5em auto;
+  padding: 0.25em 0.25em;
+  color: #fff;
+  font-size: 1.4em;
+  font-weight: 100;
+  border-radius: 4px;
+}
+#up-to-date form input[type="text"],
+#up-to-date form input[type="email"] {
+  border: 2px solid #fff;
+  background: #f7cc4b;
+}
+#up-to-date form input[type="submit"] {
+  border: none;
+  background: #222;
+}
+#up-to-date form input[type="submit"]:hover {
+  background: #fff;
+  color: #f7cc4b;
+}
+/*
+	Footer Section
+*/
+#footer {
+  padding: 3em 0;
+  background: #222;
+}
+#footer p {
+  text-align: center;
+}

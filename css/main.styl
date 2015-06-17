@@ -1,0 +1,345 @@
+/*
+	Varibles & Mixins:
+*/
+body-text = #B1B1B1;
+
+highlighted-color = #F7CC4B;
+
+rounded-image()
+	-webkit-border-radius 50%
+	-moz-border-radius 50%
+	border-radius 50%
+
+align-hack-vertical()
+	position absolute
+	top 50%
+	-webkit-transform translate(0, -50%)
+	transform translate(0, -50%)
+	
+align-hack-vertical-horizontal()
+	position absolute
+	top 50%
+	left 50%
+	-webkit-transform translate(-50%, -50%)
+	transform translate(-50%, -50%)
+	
+
+/*
+	Base Styles
+*/
+
+*
+*:before
+*:after
+	box-sizing border-box
+
+body	
+	font 100%/1.5 "Open Sans Condensed", sans-serif
+	
+	@media(min-width: 768px)
+		font 120%/1.5 "Open Sans Condensed", sans-serif
+
+h1
+h2
+h3
+	font-family "Roboto", sans-serif
+	font-weight 200
+
+h1
+	font-size 3em
+	line-height 1.25
+	
+	color white
+	
+h2
+	margin 0 0 .25em
+	text-align center
+	font-size 2.4em
+	line-height 1
+
+h3
+	margin .25em 0
+	font-size 1.6em
+	line-height 1
+
+p
+blockquote
+	font-size 1.2em 
+	line-height 1.5
+	color body-text
+	
+blockquote
+	color #222
+
+ul
+	list-style none
+	
+a
+	text-decoration none
+	color highlighted-color
+	
+img
+video
+	max-width 100%
+	
+hr 
+	border 1px solid #B1B1B1
+	
+
+.container
+	width 100%
+	max-width 1140px
+	margin 0 auto
+	padding 0 5%
+
+.subheading
+	margin 0
+	text-align center
+	font-size 1.2em
+	font-weight 200
+	
+	color highlighted-color
+	
+.btn
+	display block
+	margin 1.5em auto
+	max-width 160px
+	
+	color highlighted-color
+	font-weight bold
+	border 2px solid highlighted-color
+	padding 0.25em 2em
+		
+	&:hover
+		color white
+		background highlighted-color
+
+/*
+	Header
+*/
+
+#header
+	position relative
+	width 100%
+	height 100vh
+
+	background url('../media/hero-principles.jpg') center left
+	background-size cover
+
+	.heading
+		align-hack-vertical()
+		margin-top 0
+		text-align center
+		
+		@media (min-width: 768px)
+			position relative
+			text-align center
+		
+		span
+			color highlighted-color
+	
+/*
+	Navigation
+*/
+
+#navigation
+	position relative
+	height 90px
+	
+	background rgba(0,0,0, 0.9)
+	
+	.logo
+		margin-top 0
+		align-hack-vertical()
+		left 2.5%
+		
+	.menu
+		width 100%
+		display none
+		position absolute
+		top 100%
+		left 0
+		margin-top 0
+		
+		background rgba(0,0,0, 0.9);
+		
+		li 
+			margin 0.5em 0
+		
+		a
+			font-weight bold
+			color white
+
+
+/*
+	About Section
+*/
+
+#about-us 
+	padding 3em 0
+	
+	h2
+		text-align left
+	
+	.subheading
+		text-align left
+
+
+/*
+	Video PResentation Section
+*/
+
+#video-presentation
+	padding 3em 0
+	color white
+	
+	background highlighted-color
+	
+	.subheading
+		color #222
+		
+	.intro
+		display block
+		margin 1.5em auto
+		
+
+/*
+	Team Section
+*/
+
+#team 
+	padding 3em 0
+	
+	.member
+		margin 1.5em auto
+		text-align center
+
+		img
+			rounded-image()
+			
+		.status
+			color highlighted-color
+			font-weight 700
+			
+/*
+	Parallax Section
+*/
+
+#parallax 
+	padding 6em 0
+	
+	background url('../media/about-parallax-filtered.jpg') center fixed;
+	background-size cover
+		
+	h2
+	p
+		color white
+		
+	p
+		text-align center
+		
+	.subheading
+		color highlighted-color
+		
+/*
+	Principles Section
+*/
+
+#our-principles
+	padding 3em 0
+	
+	h2
+		margin 0.75em 0 0.25em
+	
+/*
+	Gallery Section
+*/
+
+#gallery 
+	padding 3em 0
+	background highlighted-color
+	
+	h2
+		color white
+		
+	.subheading
+		margin 0 0 .25em
+		color #222
+		
+	#owl-gallery .item
+		margin 0.5em
+	
+	#owl-gallery .item img
+		display block
+		width 100%
+		height auto
+		
+/*
+	Achievments Section
+*/
+
+#achievments 
+	padding 3em 0
+	text-align center
+	
+	h3
+		color highlighted-color
+		font-size 3em
+		font-weight 500
+		
+	.achievment .fa
+		padding 10px  0
+		color #222
+
+/*
+	Up to Date Section
+*/
+
+#up-to-date
+	padding 3em 0
+	background highlighted-color
+	
+	h2
+		color white
+	
+	.subheading
+		color #222
+	
+	form
+		margin-top 3em
+		
+		input[type="text"]
+		input[type="email"]
+		input[type="submit"]
+			display block
+			width 90%
+			margin 0.5em auto
+			padding 0.25em 0.25em
+			
+			color white
+			font-size 1.4em
+			font-weight 100
+			border-radius 4px
+			
+		input[type="text"]
+		input[type="email"]
+			border 2px solid white
+			background highlighted-color
+			
+		input[type="submit"]
+			border none
+			background #222
+			
+			&:hover
+				background white
+				color highlighted-color
+
+/*
+	Footer Section
+*/
+#footer 
+	padding 3em 0
+	background #222
+	
+	p
+		text-align center
