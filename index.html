@@ -24,15 +24,17 @@
 				<img src="media/logo.png" alt="Skewed Logo">
 			</h1>
 
-			<ul class="menu">
-				<li><a href="#">About Us</a></li>
-				<li><a href="#">Video</a></li>
-				<li><a href="#">Team</a></li>
-				<li><a href="#">Parallax</a></li>
-				<li><a href="#">Principles</a></li>
-				<li><a href="#">Gallery</a></li>
-				<li><a href="#">Achievements</a></li>
+			<ul class="menu nav-collapse">
+				<li><a href="#about-us">About Us</a></li>
+				<li><a href="#video-presentation">Video</a></li>
+				<li><a href="#team">Team</a></li>
+				<li><a href="#parallax">Parallax</a></li>
+				<li><a href="#our-principles">Principles</a></li>
+				<li><a href="#gallery">Gallery</a></li>
+				<li><a href="#achievments">Achievements</a></li>
 			</ul>
+
+			<div class="mobile-nav"><i class="fa fa-bars fa-2x"></i></div>
 
 		</nav>
 		
@@ -305,5 +307,14 @@
       		});
     	});
 	</script>
+
+	<script>
+		$(document).ready(function() {
+			$(".mobile-nav").click(function() {
+				$(".menu").toggle("slow");
+			});
+		});
+	</script>
+
 </body>
 </html>
