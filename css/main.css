@@ -330,12 +330,13 @@ hr {
 */
 #parallax {
   padding: 7em 0;
-  background: url("../media/about-parallax-filtered.jpg") center fixed;
+  background: url("../media/about-parallax-filtered.jpg") center;
   background-size: cover;
 }
 @media (min-width: 768px) {
   #parallax {
     padding: 15em 0;
+    background: url("../media/about-parallax-filtered.jpg") center fixed;
   }
 }
 #parallax h2,
