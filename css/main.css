@@ -390,6 +390,10 @@ hr {
   #our-principles .principles h2 {
     margin: 0 0 0.25em;
   }
+  #our-principles .principles h2,
+  #our-principles .principles p {
+    text-align: left;
+  }
 }
 /*
 	Gallery Section
@@ -459,6 +463,11 @@ hr {
   padding: 3em 0;
   background: #f7cc4b;
 }
+@media (min-width: 768px) {
+  #up-to-date {
+    padding: 6em 0;
+  }
+}
 #up-to-date h2 {
   color: #fff;
 }
@@ -467,6 +476,13 @@ hr {
 }
 #up-to-date form {
   margin-top: 3em;
+}
+@media (min-width: 768px) {
+  #up-to-date form {
+    -webkit-display: flex;
+    display: flex;
+    justify-content: center;
+  }
 }
 #up-to-date form input[type="text"],
 #up-to-date form input[type="email"],
@@ -479,6 +495,15 @@ hr {
   font-size: 1.4em;
   font-weight: 100;
   border-radius: 4px;
+}
+@media (min-width: 768px) {
+  #up-to-date form input[type="text"],
+  #up-to-date form input[type="email"],
+  #up-to-date form input[type="submit"] {
+    width: auto;
+    display: inline;
+    margin: 0 10px;
+  }
 }
 #up-to-date form input[type="text"],
 #up-to-date form input[type="email"] {
